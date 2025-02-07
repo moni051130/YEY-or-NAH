@@ -61,20 +61,20 @@
     const responseDiv = document.getElementById("response");
     
     // Updated GIF URLs (feel free to change these if needed)
-    const cuteGifUrl = "https://media.giphy.com/media/ASd0Ukj0y3qMM/giphy.gif"; // A cute, fun GIF
-    const sadGifUrl  = "https://media.giphy.com/media/9Y5BbDSkSTiY8/giphy.gif";  // A sad, adorable GIF
+    const cuteGifUrl = https://tenor.com/search/cute-heart-gifs.gif"; // A cute, fun GIF
+    const sadGifUrl  = "https://tenor.com/search/feeling-sad-gifs.gif";  // A sad, adorable GIF
 
     document.getElementById("yesButton").addEventListener("click", function() {
       responseDiv.innerHTML = `
-        <p>Yay! You made my day! ILOVEYOUSOMUCH MAHAL!</p>
-        <img src="${spread heart.gif}" alt="spread heart.gif">
+        <p>Yay! You made my day!</p>
+        <img src="${cuteGifUrl}" alt="Cute GIF">
       `;
     });
 
     document.getElementById("noButton").addEventListener("click", function() {
       responseDiv.innerHTML = `
-        <p>Oh no, u dont want me na?</p>
-        <img src="${sad.gif}" alt="sad.gif">
+        <p>Oh no, please reconsider!</p>
+        <img src="${sadGifUrl}" alt="Sad GIF">
       `;
     });
   </script>
