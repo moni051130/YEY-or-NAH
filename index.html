@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Will You Be My Valentine?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #FFDEE9 0%, #B5FFFC 100%);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    h1 {
+      color: #d6336c;
+      font-size: 3em;
+      margin-bottom: 30px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+    #yesButton {
+      background-color: #28a745;
+      color: #fff;
+    }
+    #noButton {
+      background-color: #dc3545;
+      color: #fff;
+      position: relative;
+    }
+    #response {
+      margin-top: 40px;
+      font-size: 1.5em;
+      color: #343a40;
+    }
+    #response img {
+      max-width: 300px;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Will You Be My Valentine?</h1>
+  <div>
+    <button id="yesButton">Yes</button>
+    <button id="noButton">No</button>
+  </div>
+  <div id="response"></div>
+
+  <script>
+    // Container for the response message and GIF
+    const responseDiv = document.getElementById("response");
+    
+    // Replace these URLs with your preferred GIFs
+    const cuteGifUrl = "https://mx.pinterest.com/pin/716424253258889872/"; // Cute GIF
+    const sadGifUrl = "http://pinterest.com/pin/m-m--741053313684425967/";  // Sad GIF
+
+    document.getElementById("yesButton").addEventListener("click", function() {
+      responseDiv.innerHTML = `
+        <p>Yay! You made my day! I LOVE YOU SO MUCH !</p>
+        <img src="${cuteGifUrl}" alt="Cute GIF">
+      `;
+    });
+
+    document.getElementById("noButton").addEventListener("click", function() {
+      responseDiv.innerHTML = `
+        <p>Oh no, U don't want me na?</p>
+        <img src="${sadGifUrl}" alt="Sad GIF">
+      `;
+    });
+  </script>
+</body>
+</html>
