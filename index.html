@@ -36,7 +36,6 @@
     #noButton {
       background-color: #dc3545;
       color: #fff;
-      position: relative;
     }
     #response {
       margin-top: 40px;
@@ -59,24 +58,23 @@
   <div id="response"></div>
 
   <script>
-    // Container for the response message and GIF
     const responseDiv = document.getElementById("response");
     
-    // Replace these URLs with your preferred GIFs
-    const cuteGifUrl = "https://mx.pinterest.com/pin/716424253258889872/"; // Cute GIF
-    const sadGifUrl = "http://pinterest.com/pin/m-m--741053313684425967/";  // Sad GIF
+    // Updated GIF URLs (feel free to change these if needed)
+    const cuteGifUrl = "https://media.giphy.com/media/ASd0Ukj0y3qMM/giphy.gif"; // A cute, fun GIF
+    const sadGifUrl  = "https://media.giphy.com/media/9Y5BbDSkSTiY8/giphy.gif";  // A sad, adorable GIF
 
     document.getElementById("yesButton").addEventListener("click", function() {
       responseDiv.innerHTML = `
-        <p>Yay! You made my day! I LOVE YOU SO MUCH !</p>
-        <img src="spread heart.gif">
+        <p>Yay! You made my day! ILOVEYOUSOMUCH MAHAL!</p>
+        <img src="${spread heart.gif}" alt="spread heart.gif">
       `;
     });
 
     document.getElementById("noButton").addEventListener("click", function() {
       responseDiv.innerHTML = `
-        <p>Oh no, U don't want me na?</p>
-        <img src="sad.gif">
+        <p>Oh no, u dont want me na?</p>
+        <img src="${sad.gif}" alt="sad.gif">
       `;
     });
   </script>
